@@ -7,7 +7,7 @@ module.exports = {
   HANDLERS:process.env.HANDLER === "false" || process.env.HANDLERS || '^,',
   BRANCH: "master",
   OWNER_NUMBER: ["919961857267@s.whatsapp.net", "0@s.whatsapp.net"],
-  STICKER_DATA: process.env.STICKER_DATA || "XERO-Mad;Afx-Nazim",
+  STICKER_DATA: process.env.STICKER_DATA || "XERO-MD;Afx-Nazim",
   SUDO: process.env.SUDO || "919961857267,0",
   API: process.env.API || "https://api-viper.onrender.com", //don't change this link. If you change then some commands will not work!.
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
