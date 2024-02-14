@@ -14,8 +14,6 @@ let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 *☼︎time:${time}*
 *☼︎author:${config.OWNER_NAME.toLowerCase()}*
 *☼︎total-plugins:${commands.length}*
-*☼︎speed:${speed.toFixed(4)}seconds*
-*☼︎ram:${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 *☼︎mode:${config.WORK_TYPE.toLowerCase()}*\n`
 let cmnd = [];
 let cmd;
