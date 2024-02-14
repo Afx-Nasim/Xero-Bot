@@ -2,7 +2,7 @@ const {clash} = require("../lib/");
 const fetch = require("node-fetch");
 const axios = require("axios");
 
-clash({pattern: "", fromMe: false, desc: "", type: "",},
+clash({pattern: "play", fromMe: false, desc: "", type: "",},
 async ({msg}) => {
 async function play() {
 let res = await axios.get(`https://toxic-kichux-aswin-sparky.koyeb.app/api/play?text=Dusk+till-Dwan+Slowed`)
