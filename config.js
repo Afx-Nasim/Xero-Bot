@@ -8,7 +8,7 @@ module.exports = {
   BRANCH: "master",
   OWNER_NUMBER: ["919961857267@s.whatsapp.net", "0@s.whatsapp.net"],
   STICKER_DATA: process.env.STICKER_DATA || "XERO-MD;Afx-Nazim",
-  SUDO: process.env.SUDO || "919961857267,0",
+  SUDO: process.env.SUDO || "0,0",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
   OWNER_NAME: process.env.OWNER_NAME || "Afx-Nasim",
