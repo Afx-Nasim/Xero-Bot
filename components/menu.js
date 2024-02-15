@@ -7,17 +7,14 @@ clash({pattern: "menu", fromMe: false, desc: "Show all bot commands.", type: "in
 async ({msg}) => {
 const speed = now() - now();
 let [date, time] = new Date().toLocaleString("en-IN", {timeZone: "Asia/Kolkata"}).split(",");
-let menu = `   ╔════════════╗
-                ${config.BOT_NAME.toLowerCase()}
-   ╚════════════╝
+let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 
-╔══════════════╗
-╠»Owner : ${config.OWNER_NAME}
-╠» mode :${config.WORK_TYPE.toLowerCase()}
-╠» Date : ${date}
-╠» Time : ${time}
-╠» Commands :${commands.length}
-╚══════════════╝\n`
+*☼︎user:${msg.pushName}*
+*☼︎date:${date}*
+*☼︎time:${time}*
+*☼︎author:${config.OWNER_NAME.toLowerCase()}*
+*☼︎total-plugins:${commands.length}*
+*☼︎mode:${config.WORK_TYPE.toLowerCase()}*\n`
 let cmnd = [];
 let cmd;
 let category = [];
@@ -38,12 +35,12 @@ if (!category.includes(type)) category.push(type);
 });
 cmnd.sort();
 category.sort().forEach((cmmd) => {
-menu += `╔══════════════╗\n╠═ ⪼ ${cmmd.toLowerCase()}
-╚══════════════╝`;
+menu += `\n*[${cmmd.toLowerCase()}]*`;
 let comad = cmnd.filter(({ type }) => type == cmmd);
 comad.forEach(({cmd}, num) => {
-menu += `\n*  ${(num += 1)}:${cmd.trim()}`
+menu += `\n*↣${(num += 1)}:${cmd.trim()}*`
 });
 menu += `\n`;
 });
-  
+return await msg.tinyreply(menu);
+});
