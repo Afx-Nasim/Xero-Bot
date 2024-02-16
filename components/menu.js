@@ -12,7 +12,7 @@ let menu = `   ╔════════════╗
    ╚════════════╝
 
 ╔══════════════╗
-╠»Owner : ${config.OWNER_NAME}
+╠» Owner : ${config.OWNER_NAME}
 ╠» mode :${config.WORK_TYPE.toLowerCase()}
 ╠» Date : ${date}
 ╠» Time : ${time}
@@ -42,10 +42,9 @@ menu += `╔══════════════╗\n╠═ ⪼ ${cmmd.toL
 ╚══════════════╝`;
 let comad = cmnd.filter(({ type }) => type == cmmd);
 comad.forEach(({cmd}, num) => {
-menu += `\n*  ${(num += 1)}:${cmd.trim()}`
+menu += `\n ➪  ${cmd.trim()}`
 });
 menu += `\n`;
 });
-  
 return await msg.tinyreply(menu);
 });
