@@ -46,5 +46,7 @@ menu += `\n ➪  ${cmd.trim()}`
 });
 menu += `\n`;
 });
-return await conn.sendMessage(msg.from, {image:{url:(config.THUMB_NAIL)}, caption:tiny(menu)},{quoted:msg});
+return await conn.sendMessage(msg.from,
+  {image:{url:(config.THUMB_NAIL)},
+   caption:tiny(menu)},{quoted:msg});
 });
