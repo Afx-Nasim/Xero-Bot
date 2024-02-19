@@ -2,7 +2,7 @@
   "name": "XERO-WA-BOT",
   "description": "WhatsApp bot.",
   "logo": "https://i.imgur.com/jwG0K4A.jpeg",
-  "repository": "https://github.com/S-U-P-E-R-I-O-R/Hilux-wa-Bot",
+  "repository": "https://github.com/Afx-Nasim/Xero-MD",
   "stack": "container",
   "env": {
     "LOGS": {
@@ -30,17 +30,17 @@
       "required": true,
       "value": "CLASH-WA-BOT"
     },
-    "THUMB_NAIL" {
+    "THUMB_NAIL": {
       "description": "menu logo",
       "required": true,
       "value": "https://i.imgur.com/jwG0K4A.jpeg"
     },
-    "ALIVE_MSG" {
+    "ALIVE_MSG": {
       "description": "Test run bot",
       "required":true,
       "value":"i am alive now buddy",
     },
-    "ALIVE_LOGO" {
+    "ALIVE_LOGO": {
       "description": "set ur alive pic",
       "required":true,
       "value": "https://i.imgur.com/jwG0K4A.jpeg"
