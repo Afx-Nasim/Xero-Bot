@@ -1,8 +1,8 @@
 {
-  "name": "CLASH-WA-BOT",
+  "name": "XERO-WA-BOT",
   "description": "WhatsApp bot.",
-  "logo": "https://i.imgur.com/5CHomMS.png",
-  "repository": "https://github.com/TOXIC-KICHUX/CLASH-WA-BOT",
+  "logo": "https://i.imgur.com/jwG0K4A.jpeg",
+  "repository": "https://github.com/S-U-P-E-R-I-O-R/Hilux-wa-Bot",
   "stack": "container",
   "env": {
     "LOGS": {
@@ -30,6 +30,21 @@
       "required": true,
       "value": "CLASH-WA-BOT"
     },
+    "THUMB_NAIL" {
+      "description": "menu logo",
+      "required": true,
+      "value": "https://i.imgur.com/jwG0K4A.jpeg"
+    },
+    "ALIVE_MSG" {
+      "description": "Test run bot",
+      "required":true,
+      "value":"i am alive now buddy",
+    },
+    "ALIVE_LOGO" {
+      "description": "set ur alive pic",
+      "required":true,
+      "value": "https://i.imgur.com/jwG0K4A.jpeg"
+  },
     "HEROKU_APP_NAME": {
       "description": "Enter the same app name which you gave above.",
       "required": true
