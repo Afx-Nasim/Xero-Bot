@@ -2,9 +2,12 @@ const {commands, clash, formatp} = require("../lib/");
 const config = require("../config.js");
 const os = require("os");
 const now = require("performance-now");
+const {tiny} = require("@toxickichux/fancytext");
+const more = String.fromCharCode(8206);
+const readMore = more.repeat(4001);
 
 clash({pattern: "menu", fromMe: false, desc: "Show all bot commands.", type: "info",},
-async ({msg}) => {
+async ({msg, conn}) => {
 const speed = now() - now();
 let [date, time] = new Date().toLocaleString("en-IN", {timeZone: "Asia/Kolkata"}).split(",");
 let menu = `   ╔════════════╗
@@ -17,7 +20,8 @@ let menu = `   ╔════════════╗
 ╠» Date : ${date}
 ╠» Time : ${time}
 ╠» Commands :${commands.length}
-╚══════════════╝\n`
+╚══════════════╝
+${readMore}\n`
 let cmnd = [];
 let cmd;
 let category = [];
@@ -46,7 +50,5 @@ menu += `\n ➪  ${cmd.trim()}`
 });
 menu += `\n`;
 });
-return await conn.sendMessage(msg.from,
-  {image:{url:(config.THUMB_NAIL)},
-   caption:tiny(menu)},{quoted:msg});
+return await conn.sendMessage(msg.from, {image:{url:config.THUMB_NAIL}, caption:tiny(menu)}, {quoted:msg});
 });
