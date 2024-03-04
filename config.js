@@ -14,8 +14,8 @@ module.exports = {
   OWNER_NAME: process.env.OWNER_NAME || "Afx-Nasim",
   BOT_NAME: process.env.BOT_NAME || "XERO-MD",
   THUMB_NAIL: process.env.THUMB_NAIL || "https://i.imgur.com/KY03JjV.jpeg",
-  ALIVE_MSG: process.env.ALIVE_MSG || "*I AM ALIVE NOW BUDDY*",
-  ALIVE_LOGO: process.env. ALIVE_LOGO || "https://i.imgur.com/jwG0K4A.jpeg",
+  ALIVE_MSG: process.env.ALIVE_MSG || "Hey {sender}, I'm alive \n Uptime: {uptime}",
+  ALIVE_LOGO: process.env. ALIVE_LOGO || "https://i.imgur.com/KY03JjV.jpeg",
   WORK_TYPE: process.env.WORK_TYPE || "public",
   DATABASE_URL: DATABASE_URL,
   DATABASE:
