@@ -6,7 +6,7 @@ module.exports = {
   LOGS: toBool(process.env.LOGS) || true, //false for if you don't want show the logs
   HANDLERS:process.env.HANDLER === "false" || process.env.HANDLERS || '^,',
   BRANCH: "master",
-  OWNER_NUMBER: ["919961857267@s.whatsapp.net", "918891871875@s.whatsapp.net"],
+  OWNER_NUMBER: ["919961857267@s.whatsapp.net", "918714803727@s.whatsapp.net"],
   STICKER_DATA: process.env.STICKER_DATA || "XERO-MD;Afx-Nazim",
   SUDO: process.env.SUDO || "919961857267,918891871875",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
