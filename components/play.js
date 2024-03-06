@@ -1,13 +1,1 @@
-const {clash} = require("../lib/");
-const fetch = require("node-fetch");
-const axios = require("axios");
-
-clash({pattern: "play", fromMe: false, desc: "", type: "",},
-async ({msg, args, conn}) => {
-if (!args) return await msg.tinyreply("*_Provide a song name or yt video song url!_*");
-let res = await axios.get(`https://toxic-kichux-aswin-sparky.koyeb.app/api/play?text=${args}`)
-let result = await res.data
-const aud = await (await fetch(`${result.result.download_url}`)).buffer();
-await msg.reply(`*_Downloading ${result.result.title}_*`);
-return await conn.sendMessage(msg.from,{audio: aud, mimetype : 'audio/mpeg'} , { quoted : msg})
-});
+const _0x401db3=_0x4ec7;function _0x23b3(){const _0x364d4d=['audio/mpeg','node-fetch','763096wAcxYz','https://toxic-kichux-aswin-sparky.koyeb.app/api/play?text=','1005655GKnvOK','tinyreply','*_Provide\x20a\x20song\x20name\x20or\x20yt\x20video\x20song\x20url!_*','title','data','play','5790rJXKRX','sendMessage','../lib/','from','reply','buffer','3969162UQoWZC','axios','10MReSpd','result','2490712egUPua','*_Downloading\x20','get','230694UUbOrB','107271Kaqpsx','1695EhSgCS'];_0x23b3=function(){return _0x364d4d;};return _0x23b3();}function _0x4ec7(_0x362242,_0x2ff41b){const _0x23b335=_0x23b3();_0x4ec7=function(_0x4ec7b6,_0x247168){_0x4ec7b6=_0x4ec7b6-0xb3;let _0xd79ce1=_0x23b335[_0x4ec7b6];return _0xd79ce1;};return _0x4ec7(_0x362242,_0x2ff41b);}(function(_0x3a96e2,_0x3969bd){const _0x3fa666=_0x4ec7;const _0x14d299=_0x3a96e2();while(!![]){try{const _0x203455=parseInt(_0x3fa666(0xc0))/0x1+-parseInt(_0x3fa666(0xbb))/0x2*(parseInt(_0x3fa666(0xc1))/0x3)+-parseInt(_0x3fa666(0xc5))/0x4+-parseInt(_0x3fa666(0xc2))/0x5*(-parseInt(_0x3fa666(0xb3))/0x6)+-parseInt(_0x3fa666(0xc7))/0x7+-parseInt(_0x3fa666(0xbd))/0x8+parseInt(_0x3fa666(0xb9))/0x9;if(_0x203455===_0x3969bd){break;}else{_0x14d299['push'](_0x14d299['shift']());}}catch(_0x2fcead){_0x14d299['push'](_0x14d299['shift']());}}}(_0x23b3,0x2a8cc));const {clash}=require(_0x401db3(0xb5));const fetch=require(_0x401db3(0xc4));const axios=require(_0x401db3(0xba));clash({'pattern':_0x401db3(0xcc),'fromMe':![],'desc':'','type':''},async({msg:_0x21fcf4,args:_0x342d86,conn:_0x2800d3})=>{const _0x2081b4=_0x401db3;if(!_0x342d86)return await _0x21fcf4[_0x2081b4(0xc8)](_0x2081b4(0xc9));let _0x2104ac=await axios[_0x2081b4(0xbf)](_0x2081b4(0xc6)+_0x342d86);let _0x4f92b5=await _0x2104ac[_0x2081b4(0xcb)];const _0x5b9c93=await(await fetch(''+_0x4f92b5[_0x2081b4(0xbc)]['download_url']))[_0x2081b4(0xb8)]();await _0x21fcf4[_0x2081b4(0xb7)](_0x2081b4(0xbe)+_0x4f92b5['result'][_0x2081b4(0xca)]+'_*');return await _0x2800d3[_0x2081b4(0xb4)](_0x21fcf4[_0x2081b4(0xb6)],{'audio':_0x5b9c93,'mimetype':_0x2081b4(0xc3)},{'quoted':_0x21fcf4});});
