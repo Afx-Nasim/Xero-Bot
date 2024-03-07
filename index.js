@@ -130,5 +130,10 @@ return conn
 }
 connectToWhatsApp()
 .catch(err => console.log(err))
+process.on("uncaughtException", async (err) => {
+    let error = err.message;
+    await conn.sendMessage(conn.user.id, { text: error });
+    console.log(err);
+  });
 }
 fanStart();
