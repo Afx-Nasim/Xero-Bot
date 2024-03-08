@@ -7,7 +7,7 @@ clash({ pattern: "ping", fromMe: false, desc: "Info of bot ping.", type: "info" 
     let message = await msg.tinyreply("*Ping!*");
     const end = new Date().getTime();
     var speed = end - start;
-    await msg.tinyedit(tiny(`*Pong!*\n*Rapidity: ${speed}ms*`), message);
+    await msg.tinyedit(tiny(`*Rapidity: ${speed}ms*`), message);
   });
 
 clash({ pattern: "runtime", fromMe: false, desc: "Info of how long the bot is alive.", type: "info" },
