@@ -6,12 +6,12 @@ Xero-MD multi device whatsapp bot
 <a href="https://github.com/Afx-Nasim/Xero-MD"><img title="Author" src="https://img.shields.io/badge/Xero-MD-black?style=for-the-badge&logo=github"></a>
 <p/>
 
-<p align="center">
-<a href="https://github.com/Afx-Nasim?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Afx-Nasim?label=Followers&style=social"></a>
-<a href="https://github.com/Afx-Nasim/Xero-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Afx-Nasim/Xero-MD?&style=social"></a>
-<a href="https://github.com/Afx-Nasim/Xero-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/Afx-Nasim/Xero-MD?style=social"></a>
-<a href="https://github.com/Afx-Nasim/Xero-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Afx-Nasim/Xero-MD?label=Watching&style=social"></a>
 </p>
+<p align="center"><img src="https://profile-counter.glitch.me/{Afx-Nasim}/count.svg" alt="naveeddogar :: Visitor's Count" /></p>
+<p align="center">
+
+________________________
+
 
 # DEPLOY SETUP
 
