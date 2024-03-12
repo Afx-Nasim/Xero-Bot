@@ -1,6 +1,8 @@
 const {clash} = require("../lib/");
 const fetch = require("node-fetch");
 const axios = require("axios");
+const config = require("../config.js);
+const { getBuffer } = require('../lib/');
 
 clash({pattern: "insta", fromMe: false, desc: "Download posts from Instagram", type: "downloader",},
 async ({args, msg, conn}) => {
@@ -20,3 +22,32 @@ console.log(e);
 msg.editmsg("*_Error!_*", key);
 }
 });
+
+  clash({pattern: "img", fromMe: false, desc: "Download images", type: "downloader",},
+}, async ({ msg, conn, msg, args }) => {
+  const endpoint = `config.${ABHI_API}api/search/gimage?text=${args}`;
+
+  try {
+    const response = await fetch(endpoint);
+    const data = await response.json();
+    const searchResults = data.result.searchResults;
+    const selectedLinks = selectRandomLinks(searchResults, 5);
+    for (let link of selectedLinks) {
+      const buffer = await getBuffer(link);
+      conn.sendMessage(msg.from, { image: { url: link } }, { quoted: msg });
+    }
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    conn.sendMessage(msg.from, { text: 'An error occurred while fetching data.' });
+  }
+});
+
+async function selectRandomLinks(links, count) {
+  const selected = [];
+  const shuffled = links.sort(() => 0.5 - Math.random());
+  for (let i = 0; i < count; i++) {
+    selected.push(shuffled[i]);
+  }
+  return selected;
+}
+
