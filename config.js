@@ -14,7 +14,7 @@ module.exports = {
   OWNER_NAME: process.env.OWNER_NAME || "Afx-Nasim",
   BOT_NAME: process.env.BOT_NAME || "XERO-MD",
   THUMB_NAIL: process.env.THUMB_NAIL || "https://i.imgur.com/KY03JjV.jpeg",
-  ABHI_API: process.env.ABHI_API || "https://abhi-api-bvws.onrender.com/",
+  ABHI_API: process.env.ABHI_API || "https://abhi-api-bvws.onrender.com/", //Dont change this some commands will not work
   ALIVE_MSG: process.env.ALIVE_MSG || "Hey {sender}, I'm alive \n Uptime: {uptime}",
   ALIVE_LOGO: process.env. ALIVE_LOGO || "https://i.imgur.com/KY03JjV.jpeg",
   WORK_TYPE: process.env.WORK_TYPE || "public",
