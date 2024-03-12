@@ -23,11 +23,12 @@ msg.editmsg("*_Error!_*", key);
 }
 });
 
-  clash({pattern: "img", fromMe: false, desc: "Download images", type: "downloader",},
-}, async ({ msg, conn, msg, args }) => {
-  const endpoint = `config.${ABHI_API}api/search/gimage?text=${args}`;
-
+clash({ pattern: "img", fromMe: false, desc: "Download images", type: "downloader" },
+async ({ args, msg, conn }) => {
+  if (!args) return await msg.tinyreply("*_Enter a text_*");
+  let { key } = await msg.tinyreply("*_Please wait ..._*");
   try {
+    const endpoint = `${config.ABHI_API}api/search/gimage?text=${args}`;
     const response = await fetch(endpoint);
     const data = await response.json();
     const searchResults = data.result.searchResults;
@@ -50,4 +51,3 @@ async function selectRandomLinks(links, count) {
   }
   return selected;
 }
-
