@@ -1,8 +1,8 @@
 {
-  "name": "XERO-WA-BOT",
+  "name": "XERO-BOT",
   "description": "WhatsApp bot.",
   "logo": "https://i.imgur.com/jwG0K4A.jpeg",
-  "repository": "https://github.com/Afx-Nasim/Xero-MD",
+  "repository": "https://github.com/Afx-Nasim/Xero-Bot",
   "stack": "container",
   "env": {
     "LOGS": {
@@ -18,17 +18,17 @@
     "STICKER_DATA": {
       "description": "Sticker metadata.",
       "required": true,
-      "value": "CLASH-WA-BOT;TOXIC-KICHUX"
+      "value": "Xero-Bot;Afx-Nasim"
     },
     "OWNER_NAME": {
       "description": "Type your name",
       "required": true,
-      "value": "TOXIC-KICHUX"
+      "value": "Afx-Nasim"
     },
     "BOT_NAME": {
       "description": "Type bot name",
       "required": true,
-      "value": "CLASH-WA-BOT"
+      "value": "XERO-BOT"
     },
     "THUMB_NAIL": {
       "description": "menu logo",
@@ -56,7 +56,7 @@
     "SUDO": {
       "description": "Enter numbers with countrycode of whom you want to give usage access of Leon.",
       "required": false,
-      "value": "919961857267,0"
+      "value": "918891871875,0"
     },
     "WORK_TYPE": {
       "description": "Enter the bot mode: private or public.",
