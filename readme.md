@@ -1,9 +1,9 @@
-Xero-MD multi device whatsapp bot
+Xero-Bot multi device whatsapp bot
 
 
 
 <p align="center">
-<a href="https://github.com/Afx-Nasim/Xero-MD"><img title="Author" src="https://img.shields.io/badge/Xero-MD-black?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Afx-Nasim/Xero-Bot"><img title="Author" src="https://img.shields.io/badge/Xero-Bot-black?style=for-the-badge&logo=github"></a>
 <p/>
 
 </p>
